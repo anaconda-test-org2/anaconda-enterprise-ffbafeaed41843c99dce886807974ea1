@@ -1,0 +1,23 @@
+name: weather_statistics
+description: An example Bokeh application with weather statistics (requires access to the internet).
+
+commands:
+  default:
+    bokeh_app: .
+
+downloads:
+  WEATHER_CSV: https://raw.githubusercontent.com/bokeh/bokeh/master/examples/app/weather/data/2015_weather.csv
+
+channels: []
+packages: []
+
+env_specs:
+  anaconda44_py35:
+    channels: []
+    packages:
+      - python=3.5
+      - scipy=0.19.0
+      - bokeh=0.12.5
+      - tornado=4.5.1
+      - pandas=0.20.1
+      - ipykernel=4.6
